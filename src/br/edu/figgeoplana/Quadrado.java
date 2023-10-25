@@ -17,7 +17,7 @@ public class Quadrado {
 
     private double area;
 
-    public void CalcArea1() {
+    public void CalcArea() {
         area = Math.pow(lado, 2);
     }
 
