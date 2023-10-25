@@ -1,7 +1,6 @@
 package br.edu.figgeoplana;
 
-
-public class Retangulo {
+public class Paralelogramo {
 
     private double base;
     private double altura;
@@ -36,7 +35,6 @@ public class Retangulo {
     }
 
     public void listaAtributos() {
-        System.out.printf("\nATRIBUTOS \n\nbase: %.1f\naltura: %.1f ", getBase(), getAltura());
+        System.out.printf("\nATRIBUTOS \n\nbase: %.1f \naltura: %.1f", getBase(), getAltura());
     }
-
 }

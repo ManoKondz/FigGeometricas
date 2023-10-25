@@ -16,7 +16,7 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.00");
 
-        System.out.println("Deseja fazer cálculo de: \n1. Figura Plana\n2. Figura Espacial");
+        System.out.println("Deseja fazer cálculo de: \n1. Figura Plana\n2. Figura Espacial(falta implementar)");
         escolhatip = sc.nextByte();
 
         if (escolhatip == 1) {

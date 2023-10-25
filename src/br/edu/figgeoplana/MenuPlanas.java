@@ -1,16 +1,9 @@
 package br.edu.figgeoplana;
 
-import br.edu.principal.*;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-
-
 public class MenuPlanas {
-
-
-
-    Principal pr = new Principal();
 
     double escolhafig;
     Scanner sc = new Scanner(System.in);
@@ -20,7 +13,7 @@ public class MenuPlanas {
     public void FigsPlanas() {
 
 
-        System.out.println("\nDeseja fazer cálculo da área de um: \n1. Triângulo\n2. Quadrado\n3. Circulo\n4. Trapézio\n5. Paralelogramo\n6. Losango\n7. Retângulo|");
+        System.out.println("\nDeseja fazer cálculo da área de um: \n1. Triângulo\n2. Quadrado\n3. Retângulo\n4. Paralelogramo\n5. Losango\n6. Trapézio\n7. Círculo|");
         escolhafig = sc.nextByte();
 
         if (escolhafig == 1) {
@@ -48,7 +41,7 @@ public class MenuPlanas {
             objQuad.setLado(x);
 
             objQuad.listaAtributos();
-            objQuad.CalcArea1();
+            objQuad.CalcArea();
 
             System.out.printf("\nA área do quadrado vale: %.1f ", objQuad.getArea());
         }
@@ -65,12 +58,79 @@ public class MenuPlanas {
             objRetan.setAltura(x);
 
             objRetan.listaAtributos();
-            objRetan.CalcArea1();
+            objRetan.CalcArea();
 
-            System.out.println("\nA área do retângulo vale: " + df.format(objRetan.getArea()));
+            System.out.printf("\nA área do retângulo vale: %.1f", objRetan.getArea());
         }
 
+        if (escolhafig == 4) {
+            Paralelogramo objParalel = new Paralelogramo();
 
+            System.out.print("\nDigite a medida da base: ");
+            double x = sc.nextDouble();
+            objParalel.setBase(x);
 
+            System.out.print("\nDigite a medida da altura: ");
+            x = sc.nextDouble();
+            objParalel.setAltura(x);
+
+            objParalel.listaAtributos();
+            objParalel.CalcArea();
+
+            System.out.printf("\nA área do paralelogramo vale: %.1f", objParalel.getArea());
+        }
+
+        if (escolhafig == 5) {
+            Losango objLosan = new Losango();
+
+            System.out.print("\nDigite a medida da diagonal maior: ");
+            double x = sc.nextDouble();
+            objLosan.setDiagonalMaior(x);
+
+            System.out.print("\nDigite a medida da diagonal menor: ");
+            x = sc.nextDouble();
+            objLosan.setDiagonalMenor(x);
+
+            objLosan.listaAtributos();
+            objLosan.CalcArea();
+
+            System.out.printf("\nA área do losango vale: %.1f", objLosan.getArea());
+        }
+
+        if (escolhafig == 6) {
+            Trapezio objTrap = new Trapezio();
+
+            System.out.print("\nDigite a medida da base menor: ");
+            double x = sc.nextDouble();
+            objTrap.setBaseMenor(x);
+
+            System.out.print("\nDigite a medida da base maior: ");
+            x = sc.nextDouble();
+            objTrap.setBaseMaior(x);
+
+            System.out.print("\nDigite a medida da altura: ");
+            x = sc.nextDouble();
+            objTrap.setAltura(x);
+
+            objTrap.listaAtributos();
+            objTrap.CalcArea1();
+
+            System.out.printf("\nA área do trapézio vale: %.1f", objTrap.getArea());
+        }
+
+        if (escolhafig == 7) {
+            Circulo objCirc = new Circulo();
+
+            System.out.print("\nDigite a medida do raio: ");
+            double x = sc.nextDouble();
+            objCirc.setRaio(x);
+
+            objCirc.listaAtributos();
+            objCirc.CalcArea1();
+
+            System.out.printf("\nA área do círculo vale: ", objCirc.getArea());
+        }
     }
 }
+
+
