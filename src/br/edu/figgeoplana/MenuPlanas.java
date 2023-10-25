@@ -113,7 +113,7 @@ public class MenuPlanas {
             objTrap.setAltura(x);
 
             objTrap.listaAtributos();
-            objTrap.CalcArea1();
+            objTrap.CalcArea();
 
             System.out.printf("\nA área do trapézio vale: %.1f", objTrap.getArea());
         }
@@ -128,7 +128,7 @@ public class MenuPlanas {
             objCirc.listaAtributos();
             objCirc.CalcArea1();
 
-            System.out.printf("\nA área do círculo vale: ", objCirc.getArea());
+            System.out.printf("\nA área do círculo vale: %.1f", objCirc.getArea());
         }
     }
 }

@@ -29,7 +29,7 @@ public class Triangulo {
     }
 
     public void listaAtributos() {
-        System.out.printf("\nATRIBUTOS \n\nBase: %.1f\n Altura%.1f ", base, altura);
+        System.out.printf("\nATRIBUTOS \n\nBase: %.1f\nAltura: %.1f ", base, altura);
 
     }
 }
