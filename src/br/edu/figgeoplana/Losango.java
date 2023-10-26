@@ -3,27 +3,27 @@ package br.edu.figgeoplana;
 public class Losango {
 
 
-    private double diagonalMaior;
-    private double diagonalMenor;
+    private double diagMaior;
+    private double diagMenor;
     private double area;
 
-    public double getDiagonalMaior() {
-        return diagonalMaior;
+    public double getDiagMaior() {
+        return diagMaior;
     }
 
-    public void setDiagonalMaior(double diagonalMaior) {
-        if (diagonalMaior > 0) {
-            this.diagonalMaior = diagonalMaior;
+    public void setDiagMaior(double diagMaior) {
+        if (diagMaior > 0) {
+            this.diagMaior = diagMaior;
         }
     }
 
-    public double getDiagonalMenor() {
-        return diagonalMenor;
+    public double getDiagMenor() {
+        return diagMenor;
     }
 
-    public void setDiagonalMenor(double diagonalMenor) {
-        if (diagonalMaior > 0) {
-            this.diagonalMenor = diagonalMenor;
+    public void setDiagMenor(double diagMenor) {
+        if (diagMaior > 0) {
+            this.diagMenor = diagMenor;
         }
     }
 
@@ -33,11 +33,10 @@ public class Losango {
 
 
     public void CalcArea() {
-        area = diagonalMaior * diagonalMenor/2;
+        area = diagMaior * diagMenor/2;
     }
 
     public void listaAtributos() {
-        System.out.printf("\nATRIBUTOS \n\ndiagonal maior: %.1f \ndiagonal menor: %.1f", getDiagonalMaior(), getDiagonalMenor());
-
+        System.out.printf("\nATRIBUTOS \n\ndiagonal maior: %.1f \ndiagonal menor: %.1f", getDiagMaior(), getDiagMenor());
     }
 }

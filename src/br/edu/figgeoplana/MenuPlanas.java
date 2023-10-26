@@ -7,8 +7,6 @@ public class MenuPlanas {
 
     double escolhafig;
     Scanner sc = new Scanner(System.in);
-    DecimalFormat df = new DecimalFormat("0.00");
-
 
     public void FigsPlanas() {
 
@@ -85,11 +83,11 @@ public class MenuPlanas {
 
             System.out.print("\nDigite a medida da diagonal maior: ");
             double x = sc.nextDouble();
-            objLosan.setDiagonalMaior(x);
+            objLosan.setDiagMaior(x);
 
             System.out.print("\nDigite a medida da diagonal menor: ");
             x = sc.nextDouble();
-            objLosan.setDiagonalMenor(x);
+            objLosan.setDiagMenor(x);
 
             objLosan.listaAtributos();
             objLosan.CalcArea();
@@ -126,7 +124,7 @@ public class MenuPlanas {
             objCirc.setRaio(x);
 
             objCirc.listaAtributos();
-            objCirc.CalcArea1();
+            objCirc.CalcArea();
 
             System.out.printf("\nA área do círculo vale: %.1f", objCirc.getArea());
         }
