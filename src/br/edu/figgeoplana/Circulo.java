@@ -14,7 +14,7 @@ public class Circulo {
         return area;
     }
 
-    public void CalcArea1() {
+    public void CalcArea() {
         area = Math.PI * Math.pow(raio, 2);
     }
 
